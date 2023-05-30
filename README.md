@@ -5,7 +5,7 @@ This code performs differential gene expression analysis on the dataset GSE10407
 ## Getting Started
 Install the required R packages: DESeq2, RColorBrewer, gplots, GO.db, and GOfuncR. 
    
-Code Explanation
+## Code Explanation
 The code can be divided into the following sections:
 
 1) Loading and Preprocessing Data:
@@ -34,7 +34,7 @@ Outputs a subset of enriched GO terms with adjusted p-values < 0.1.
 7) Bar Plot for GO Enrichment:
 Creates a bar plot of enriched GO terms, highlighting the enrichment levels.
 
-Output Files
+## Output Files
 The code generates the following output files in the same directory:
 
 resSig.sorted.tab.txt: A tab-separated file containing the sorted significant results of differentially expressed genes.
