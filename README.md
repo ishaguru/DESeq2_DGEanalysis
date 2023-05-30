@@ -12,17 +12,17 @@ The code can be divided into the following sections:
 Reads the count data from vehicle_drug_feature_counts.txt and selects relevant columns.
 Performs basic quality checks on the count data.
 
-2)Filtering Low-Expressed Genes:
+2) Filtering Low-Expressed Genes:
 Removes genes with low expression (bottom 25%) based on a threshold of less than 16 reads.
 
-3)Normalization and Differential Expression Analysis:
+3) Normalization and Differential Expression Analysis:
 Constructs a DESeqDataSet object from the filtered data.
 Applies normalization and performs differential expression analysis using DESeq2.
 
-4)Extracting Significantly Differentially Expressed Genes:
+4) Extracting Significantly Differentially Expressed Genes:
 Filters the results based on adjusted p-values and selects genes with p-value < 0.01.
 
-5)Visualization:
+5) Visualization:
 Generates a heatmap of normalized read counts.
 Creates a volcano plot to visualize the significance and fold changes of differentially expressed genes.
 
@@ -34,7 +34,7 @@ Outputs a subset of enriched GO terms with adjusted p-values < 0.1.
 7) Bar Plot for GO Enrichment:
 Creates a bar plot of enriched GO terms, highlighting the enrichment levels.
 
-**Output Files**
+Output Files
 The code generates the following output files in the same directory:
 
 resSig.sorted.tab.txt: A tab-separated file containing the sorted significant results of differentially expressed genes.
